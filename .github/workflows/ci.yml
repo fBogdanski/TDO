@@ -39,4 +39,4 @@ jobs:
         with:
           python-version: '3.12'
       - run: pip install -r requirements.txt
-      - run: python -c "from app.main import app; print('✓ Application built successfully')"
+      - run: DB_PATH=/tmp/app.db python -c "from app.main import app; print('✓ Application built successfully')"
